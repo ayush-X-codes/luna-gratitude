@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --sand:       #F5EFE6;
+  --petal:      #F2D9CA;
+  --terracotta: #C97060;
+  --bark:       #7A4E3E;
+  --midnight:   #2C1F3E;
+  --fog:        #8B8098;
+  --white:      #FFFFFF;
+}
+
+.complete {
+  min-height: 100vh;
+  background: var(--sand);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 64px 24px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.complete-wrapper {
+  max-width: 360px;
+  width: 100%;
+}
+
+/* MESSAGE */
+.complete-message {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.complete-heading {
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--midnight);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.complete-sub {
+  font-size: 15px;
+  color: var(--fog);
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+}
+
+/* ANSWER CARDS */
+.answer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.answer-card {
+  background: var(--white);
+  border: 1.5px solid var(--petal);
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 15px;
+  color: var(--bark);
+  line-height: 1.6;
+  box-shadow: 0 2px 12px rgba(44,31,62,0.06);
+}
+
+/* BUTTON */
+.btn-finish {
+  width: 100%;
+  background: transparent;
+  color: var(--terracotta);
+  border: 1.5px solid var(--petal);
+  border-radius: 999px;
+  padding: 16px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.btn-finish:hover {
+  background: var(--petal);
+  border-color: var(--terracotta);
+}

@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@0;1&display=swap");
+
+:root {
+  --midnight-clr: #2c1f3e;
+  --petal: #f2d9ca;
+  --cream: #fdf9f4;
+  --blush: #e8a89c;
+  --terracotta: #c97060;
+}
+
+.check-in {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  background: var(--cream);
+}
+
+.check-in-wrapper {
+  width: 100%;
+  max-width: 360px;
+  padding: 40px 24px;
+}
+
+.check-heading {
+  font-family: "Instrument Serif", serif;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--midnight-clr);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.choice-card {
+  display: flex;
+  align-items: center;
+  color: var(--midnight-clr);
+  background: #ffffff;
+  padding: 18px 20px;
+  border-radius: 24px;
+  font-family: "DM Sans", sans-serif;
+  border: 1.5px solid var(--petal);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.choice-card.selected {
+  background: #f2d9ca;
+  border-color: #c97060;
+}
+
+.choice-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--midnight-clr);
+}
+
+.btn-con {
+  width: 100%;
+  background: var(--terracotta);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 16px;
+  text-decoration: none;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 0 4px 14px rgba(201, 112, 96, 0.28);
+}
+
+.btn-con:hover {
+  background-color: #7a4e3e;
+  transform: translateY(-1px);
+}
+
+.btn-con:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+  transition: none;
+}
