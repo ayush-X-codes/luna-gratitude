@@ -5,8 +5,9 @@ import "./CheckIn.css";
 
 const feelings = ["A little lost", "Tired", "Heavy", "Unclear", "Okay"];
 
-const CheckIn = () => {
+const CheckIn = ({ setChoosedFeeling }) => {
   const [selected, setSelected] = useState(null);
+
 
   return (
     <div className="check-in" id="check-in">
@@ -25,14 +26,17 @@ const CheckIn = () => {
                 value={feeling}
                 hidden
                 onChange={() => setSelected(feeling)}
+                onClick={() => setChoosedFeeling(feeling)}
               />
-              <div className="choice-title">{feeling}</div>
+              <div className="choice-title" >{feeling}</div>
             </label>
           ))}
         </div>
-        <Link to="/reflect"><button className="btn-con" disabled={!selected}>
-          Continue
-        </button></Link>
+        <Link to="/reflect">
+          <button className="btn-con" disabled={!selected}>
+            Continue
+          </button>
+        </Link>
       </div>
     </div>
   );
