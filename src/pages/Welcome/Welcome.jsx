@@ -27,10 +27,11 @@ const Welcome = () => {
         <div className="hero-content">
           <h1 className="hero-heading">Welcome to luna</h1>
           <p className="hero-para">
-            For the days that feel heavy, unclear, or slow. You don’t need to
-            fix everything right now. 🌸
+            You don't have to fix anything right now. 🌸
           </p>
-          <Link to="/check-in"><button className="hero-btn">Let's Begin</button></Link>
+          <Link to="/check-in">
+            <button className="hero-btn">Let's Begin</button>
+          </Link>
         </div>
       </div>
     </div>
