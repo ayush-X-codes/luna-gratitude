@@ -85,3 +85,22 @@
   background: var(--petal);
   border-color: var(--terracotta);
 }
+
+/* FEEDBACK */
+.feedback {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.feedback a {
+  font-family: 'Instrument Serif', serif;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--fog);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.feedback a:hover {
+  color: var(--terracotta);
+}
