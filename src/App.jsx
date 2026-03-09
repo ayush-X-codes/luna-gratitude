@@ -5,14 +5,17 @@ import Welcome from "./pages/Welcome/Welcome";
 import CheckIn from "./pages/CheckIn/CheckIn";
 import Journal from "./pages/Journal/Journal";
 import Complete from "./pages/Complete/Complete";
+import Analytics from "./components/Analytics";
 
 const App = () => {
   const [answers, setAnswers] = useState(["", "", ""]);
   const [choosedFeeling, setChoosedFeeling] = useState("");
-  console.log("choosing feeling is: ", choosedFeeling)
+
+
 
   return (
     <BrowserRouter>
+    <Analytics/>
       <Routes>
         <Route path="/" element={<Welcome />}></Route>
         <Route
