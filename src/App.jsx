@@ -5,25 +5,16 @@ import Welcome from "./pages/Welcome/Welcome";
 import CheckIn from "./pages/CheckIn/CheckIn";
 import Journal from "./pages/Journal/Journal";
 import Complete from "./pages/Complete/Complete";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import Analytics from "./components/Analytics";
+
 
 const App = () => {
   const [answers, setAnswers] = useState(["", "", ""]);
   const [choosedFeeling, setChoosedFeeling] = useState("");
-  
-
-   useEffect(() => {
-    if (window.gtag) {
-      window.gtag('config', 'G-V6HM8JTCHR', {
-        page_path: location.pathname,
-      });
-    }
-  }, [location]);
-  
 
   return (
     <BrowserRouter>
+    <Analytics/>
       <Routes>
         <Route path="/" element={<Welcome />}></Route>
         <Route

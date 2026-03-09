@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import SEO from "../../components/SEO";
 import "./CheckIn.css";
 import SEO from "../../components/SEO";
 

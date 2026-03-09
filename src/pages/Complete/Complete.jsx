@@ -1,7 +1,9 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import "./Complete.css";
-import SEO from "../../components/SEO";
+
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import "./Complete.css"
+import SEO from '../../components/SEO'
+
 
 const Complete = ({ answers }) => {
   const navigate = useNavigate();
@@ -18,28 +20,28 @@ const Complete = ({ answers }) => {
           gratitude practice, daily journaling habit"
       />
 
-      <div className="complete">
-        <div className="complete-wrapper">
+      <div className='complete'>
+        <div className='complete-wrapper'>
+
           {/* Message */}
-          <div className="complete-message">
-            <h2 className="complete-heading">You showed up today.</h2>
-            <p className="complete-sub">That's enough.</p>
+          <div className='complete-message'>
+            <h2 className='complete-heading'>You showed up today.</h2>
+            <p className='complete-sub'>That's enough.</p>
           </div>
 
           {/* Their answers */}
-          <div className="answer-list">
-            {answers.map(
-              (answer, i) =>
-                answer && (
-                  <div key={i} className="answer-card">
-                    <p>{answer}</p>
-                  </div>
-                ),
-            )}
+          <div className='answer-list'>
+            {answers.map((answer, i) => (
+              answer && (
+                <div key={i} className='answer-card'>
+                  <p>{answer}</p>
+                </div>
+              )
+            ))}
           </div>
 
           {/* Finish */}
-          <button className="btn-finish" onClick={() => navigate("/")}>
+          <button className='btn-finish' onClick={() => navigate('/')}>
             Finish
           </button>
 
@@ -55,7 +57,7 @@ const Complete = ({ answers }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 export default Complete;

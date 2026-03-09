@@ -3,6 +3,7 @@ import "./Journal.css";
 import { useNavigate } from "react-router-dom";
 import SEO from "../../components/SEO";
 
+
 const prompts = {
   "A little lost": [
     "What feels uncertain for you right now?",
